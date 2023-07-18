@@ -1,0 +1,24 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "deploy": "nuxt generate && node touch.js .output/public/.nojekyll && gh-pages --dotfiles -d .output/public"
+  },
+  "dependencies": {
+    "@unocss/nuxt": "^0.53.5",
+    "@vueuse/nuxt": "^10.2.1"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^1.0.0-rc.1",
+    "@iconify-json/mdi": "^1.1.53",
+    "eslint-plugin-prettier": "^5.0.0",
+    "@nuxt/devtools": "latest",
+    "@types/node": "^18.16.19",
+    "nuxt": "^3.6.3"
+  }
+}
