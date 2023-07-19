@@ -1,63 +1,27 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# This is my goto Nuxt3 Starterkit to quickly deploy to github pages
 
 ## Setup
-
-Make sure to install the dependencies:
 
 ```bash
 # npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# Dev-Server
 npm run dev
+# Deploy to gh- Pages
+npm run deploy
+# There is a touch.js in root to enable deploying from windows
 
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
 ```
 
-## Production
+Make sure to rename the baseUrl in nuxt.config.ts to the name of your repository otherwise the gh-page will not work
 
-Build the application for production:
+```ts
+  app: {
+    baseURL: "/gh-pages-nuxt-starter/",
+  },
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
